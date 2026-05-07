@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "offensive-alcohol",
+	"version": "${version}",
+	"name": "Offensive Alcohol",
+	"description": "Molotovs, anchors and pub decor!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.eeebsie.offensivealcohol.OffensiveAlcohol"
+		],
+		"client": [
+			"net.eeebsie.offensivealcohol.OffensiveAlcoholClient"
+		],
+		"fabric-datagen": [
+			"net.eeebsie.offensivealcohol.OffensiveAlcoholDataGenerator"
+		]
+	},
+	"mixins": [
+		"offensive-alcohol.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"brewery": "*"
+	}
+}
